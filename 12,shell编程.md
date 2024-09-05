@@ -1,6 +1,6 @@
 ## 概述
 
-![image-20240306170006096](./image_12,shell%E7%BC%96%E7%A8%8B/image-20240306170006096.png)
+![image-20240306170006096](./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240306170006096.png)
 
 🖋 Shell 是一个用 C 语言编写的程序，它是用户使用 Linux 的桥梁。Shell 既是一种命令语言，又是一种程序设计语言。
 
@@ -30,7 +30,7 @@ Shell for Root（/sbin/sh）
 
 📃ubuntu提供的 Shell 解析器：
 
-<img src="./image_12,shell%E7%BC%96%E7%A8%8B/image-20240306170313308.png" alt="image-20240306170313308" style="zoom:80%;" />
+<img src="./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240306170313308.png" alt="image-20240306170313308" style="zoom:80%;" />
 
 ==ubuntu的sh链接到了dash==
 
@@ -46,7 +46,7 @@ dash 比 bash 更轻，更快。但 bash 却更常用。
 
 `ll /bin/ |grep dash`
 
-<img src="./image_12,shell%E7%BC%96%E7%A8%8B/image-20240306170649688.png" alt="image-20240306170649688" style="zoom:80%;" />
+<img src="./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240306170649688.png" alt="image-20240306170649688" style="zoom:80%;" />
 
 `ls -l /bin/ |grep sh`
 
@@ -92,7 +92,7 @@ Helloworld
 
 ==📝 采用直接输入脚本的绝对路径或相对路径执行脚本（必须具有可执行权限+x）==
 
-<img src="./image_12,shell%E7%BC%96%E7%A8%8B/image-20240307192139508.png" alt="image-20240307192139508" style="zoom:80%;" />
+<img src="./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240307192139508.png" alt="image-20240307192139508" style="zoom:80%;" />
 
 ```shell
 [root@Demo shells]$ chmod +x helloworld.sh
@@ -238,15 +238,15 @@ helloworld
 
 #### $n
 
-![image-20240307203640403](./image_12,shell%E7%BC%96%E7%A8%8B/image-20240307203640403.png)
+![image-20240307203640403](./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240307203640403.png)
 
-![image-20240307204834740](./image_12,shell%E7%BC%96%E7%A8%8B/image-20240307204834740.png)
+![image-20240307204834740](./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240307204834740.png)
 
 ```
 $ ./hello.sh 1st 2nd
 ```
 
-![image-20240307204853821](./image_12,shell%E7%BC%96%E7%A8%8B/image-20240307204853821.png)
+![image-20240307204853821](./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240307204853821.png)
 
 ```
 $#	传递到脚本的参数个数
@@ -619,7 +619,7 @@ echo ${string//text/TEXT}  # TEXT, dummy, TEXT, dummy
 
 ## 运算符
 
-![image-20240307212021271](./image_12,shell%E7%BC%96%E7%A8%8B/image-20240307212021271.png)
+![image-20240307212021271](./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240307212021271.png)
 
 ```shell
 a=1
@@ -659,11 +659,11 @@ password is abcdef
 
 ## 条件判断
 
-![image-20240307213608420](./image_12,shell%E7%BC%96%E7%A8%8B/image-20240307213608420.png)
+![image-20240307213608420](./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240307213608420.png)
 
-<img src="./image_12,shell%E7%BC%96%E7%A8%8B/image-20240307213859377.png" alt="image-20240307213859377" style="zoom:80%;" />
+<img src="./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240307213859377.png" alt="image-20240307213859377" style="zoom:80%;" />
 
-![image-20240307214002506](./image_12,shell%E7%BC%96%E7%A8%8B/image-20240307214002506.png)
+![image-20240307214002506](./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240307214002506.png)
 
 🔗 条件表达式要放在方括号之间，并且要有空格。`[ $a==$b] `是错误的，必须写成 `[ $a == $b ]`。==注意 ==两边有空格，[]和变量有空格==
 
@@ -783,7 +783,7 @@ fi
 
 ### 格式1
 
-![image-20240308123251917](./image_12,shell%E7%BC%96%E7%A8%8B/image-20240308123251917.png)
+![image-20240308123251917](./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240308123251917.png)
 
 ### for循环格式2
 
@@ -996,7 +996,7 @@ done
 
 ## let
 
-<img src="./image_12,shell%E7%BC%96%E7%A8%8B/image-20240308124836122.png" alt="image-20240308124836122" style="zoom:80%;" />
+<img src="./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240308124836122.png" alt="image-20240308124836122" style="zoom:80%;" />
 
 ## 函数
 
@@ -1203,7 +1203,7 @@ command1 < infile > outfile
 
 ## EOF
 
-<img src="./image_12,shell%E7%BC%96%E7%A8%8B/image-20240308131819428.png" alt="image-20240308131819428" style="zoom:80%;" />
+<img src="./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240308131819428.png" alt="image-20240308131819428" style="zoom:80%;" />
 
 将EOF临时文件写入user
 
@@ -1295,7 +1295,7 @@ c
 $ vim cut.txt 
 ```
 
-<img src="./image_12,shell%E7%BC%96%E7%A8%8B/image-20240308134825182.png" alt="image-20240308134825182" style="zoom:80%;" />
+<img src="./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240308134825182.png" alt="image-20240308134825182" style="zoom:80%;" />
 
 ```shell
 $ cut -d " " -f 1 cut.txt # 以 " "分割 截取第一列
@@ -1307,7 +1307,7 @@ $ cat /etc/passwd |grep bash$ #搜索bash结尾的用户
 $ cat /etc/passwd |grep bash$| cut -d ":" -f 1,6,7  #截取1，6，7列
 ```
 
-<img src="./image_12,shell%E7%BC%96%E7%A8%8B/image-20240308135505141.png" alt="image-20240308135505141" style="zoom:80%;" />
+<img src="./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240308135505141.png" alt="image-20240308135505141" style="zoom:80%;" />
 
 ```shell
 $ cat /etc/passwd |grep bash$| cut -d ":" -f 1-4,6-  #截取1-4列，6到最后列
@@ -1318,7 +1318,7 @@ $ ifconfig ens33|grep network|cut -d " " f 10
 #grep搜到network这一行 cut切第10列
 ```
 
-<img src="./image_12,shell%E7%BC%96%E7%A8%8B/image-20240308140139864.png" alt="image-20240308140139864" style="zoom:80%;" />
+<img src="./image/image_12,shell%E7%BC%96%E7%A8%8B/image-20240308140139864.png" alt="image-20240308140139864" style="zoom:80%;" />
 
 ### 文件包含
 
